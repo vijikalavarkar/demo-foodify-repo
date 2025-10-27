@@ -28,6 +28,14 @@ variable "public_route_table_name" {}
 # Security Groups
 variable "security_group_name" {}
 
+# EC2
+variable "ami_id" {}
+variable "instance_type" {}
+variable "key_name" {}
+variable "instance_name" {}
 
-# Tester Security Group
-variable "tester_internet_gateway_name" {}
+
+# DynamoDB
+variable "dynamodb_table_name" {}
+variable "billing_mode" {}
+variable "hash_key" {}

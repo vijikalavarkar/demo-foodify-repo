@@ -27,3 +27,8 @@ public_route_table_name = "foodify_public_route_table"
 
 # Security Groups
 security_group_name = "foodify_security_group"
+
+
+
+# Tester Internet Gateway
+tester_internet_gateway_name = "tester_internet_gateway"

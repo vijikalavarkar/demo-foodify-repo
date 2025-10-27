@@ -6,12 +6,3 @@ resource "aws_internet_gateway" "foodify_internet_gateway" {
   }
 }
 
-
-# Tester Internet Gateway
-resource "aws_internet_gateway" "tester_internet_gateway" {
-  vpc_id = data.aws_vpc.tester_vpc.id
-
-  tags = {
-    Name = var.tester_internet_gateway_name
-  }
-}

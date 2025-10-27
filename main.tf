@@ -27,9 +27,10 @@ module "vpc" {
 
 # Internet Gateway
 module "internet_gateway" {
-  source                = "./modules/internet_gateway"
-  vpc_id                = module.vpc.vpc_id
-  internet_gateway_name = var.internet_gateway_name
+  source                       = "./modules/internet_gateway"
+  vpc_id                       = module.vpc.vpc_id
+  internet_gateway_name        = var.internet_gateway_name
+  tester_internet_gateway_name = var.tester_internet_gateway_name
 }
 
 # Subnets
